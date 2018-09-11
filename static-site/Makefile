@@ -1,2 +1,4 @@
+name = stacy
+
 build:
-	docker build 
+	docker build -t $(name) 
