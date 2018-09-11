@@ -1,7 +1,8 @@
-FROM nginx
+FROM nginx:alpine
 ENV AUTHOR=docker
 
 WORKDIR /srv
-COPY index.html /srv
+COPY default.conf /etc/nginx/conf.d/default.conf
+COPY index.html /srv/index.html
 
-CMD /srv && sed -e s/Docker/"$AUTHOR"/index.html > index.html ; nginx -g 'daemon off;'
+CMD nginx -g 'daemon off;'
