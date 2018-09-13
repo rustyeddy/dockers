@@ -1,4 +1,4 @@
-name = static-nginx
+name = rustyeddy/static-nginx
 files = Dockerfile default.conf index.html
 cleanup = *~ .BUILT
 
