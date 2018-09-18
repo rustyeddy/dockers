@@ -1,0 +1,5 @@
+digraph RG {
+    A -> B -> D
+    A -> C
+	A -> C
+}
